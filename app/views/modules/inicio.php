@@ -1,33 +1,37 @@
-<div class="row text-center" >
-  <h3 class="col-sm-12">Bienvenidos al Sistema de Inventario de Bienes</h3>
-</div>
-
 <?php
   require_once "../app/controllers/UsuariosController.php";
   $users = new UsuariosController();
 ?>
-<div class="row text-center">
-  <h1>Pagina de Ingresar</h1>
-</div>
-<form class="form-control" method="post">
-<div class="row text-center">
-  <label for="uname"><b>Username</b></label>
-  <input type="text" placeholder="Enter Username" name="name" class="form-control" required>
+<div class="row text-center" >
+  <h3 class="col-sm-12">Bienvenidos al Sistema de Inventario de Bienes</h3>
 </div>
 
-<div class="row text-center">
-  <label for="psw"><b>Password</b></label>
-  <input type="password" placeholder="Enter Password" name="psw" required>
+<div class="text-center">
+  <form method="post" class="form-horizontal" role="form">
+    <div class="form-group row">
+      <div class="col-md-offset-4 col-sm-1">
+          <label for="email" class="control-label">Usuario</label>
+      </div>
+      <div class="col-sm-3">
+        <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-md-offset-4 col-sm-1">
+          <label for="password" class="control-label">Password</label>
+      </div>
+      <div class="col-sm-3">
+        <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="">
+        <input class="btn btn-primary" type="submit" name="submit_login" value="Ingresar">
+      </div>
+    </div>
+  </form>
+  <?php $users->ingreso(); ?>
 </div>
-
-<div class="row text-center">
-  <input type="submit" name="submit_login" value="Submit" class="btn btn-primary">
-</div>
-<?php
-  $users_consulta = $users->ingreso();
-?>
-</form>
-
 
 <div class="row">
   <div class="boxs">

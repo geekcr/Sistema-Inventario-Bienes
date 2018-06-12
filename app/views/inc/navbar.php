@@ -32,7 +32,7 @@
           <li>
               <a href="index.php?action=admin" class="dropdown-toggle" data-toggle="dropdown">Administrador <b class="caret"></b></a>
               <ul class="dropdown-menu multi-level">
-                <li><a href="">Usuarios</a></li>
+                <li><a href="index.php?action=user_query">Usuarios</a></li>
                 <li><a href="">Roles</a></li>
                 <li><a href="">Asignacion Roles</a></li>
               </ul>
