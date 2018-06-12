@@ -3,8 +3,8 @@ class ConexionModel{
 
   public function conexion(){
 
-    $host     = "localhost";
-    $database = "HCDATABASE02";
+    $host     = "192.168.2.111";
+    $database = "Inventariobienes";
     $user     = "root";
     $password = "";
 
@@ -18,3 +18,6 @@ class ConexionModel{
   }
 
 }
+
+$object = new ConexionModel();
+echo $object->conexion();

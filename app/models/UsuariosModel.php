@@ -15,6 +15,6 @@ class UsuariosModel{
   }
 
   public function login($datos){
-    return "los datos enviados son: username ".$datos["usuario"]." contraseña ".$datos["pass"];
+    return "los datos enviados son: username ".$datos["username"]." contraseña ".$datos["password"];
   }
 }
