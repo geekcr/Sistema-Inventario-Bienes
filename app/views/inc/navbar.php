@@ -8,18 +8,42 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="index.php"><img class="img-responsive" style="max-weight: 15%; max-width: 15%;" src="img/prueba.jpg" alt="CONAPDIS"></a>
+        <a href="index.php"><img class="img-responsive" style="max-weight: 5%; max-width: 5%;" src="img/prueba.jpg" alt="CONAPDIS"></a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.php?action=ingresar">ingresar</a></li>
-          <li><a href="index.php?action=usuarios">usuarios</a></li>
-          <li><a href="index.php?action=editar">editar</a></li>
-          <li><a href="index.php?action=salir">salir</a></li>
-          <li><a href="./app/vista/inicio.php">Inicio</a></li>
-          <li><a href="./app/vista/incorporacion.php">Incorporación</a></li>
-          <li><a href="./app/controlador/cerrar_session.php">Cerrar sesion</a></li>
-          <li><a href="./app/vista/inicio.php">Administrador</a></li>
+          <li></li>
+          <li>
+              <a href="index.php?action=admin" class="dropdown-toggle" data-toggle="dropdown">Bienes <b class="caret"></b></a>
+              <ul class="dropdown-menu multi-level">
+                <li><a href="">Consultar</a></li>
+                <li><a href="index.php?action=registrar_bienes">Registrar</a></li>
+                <li><a href="">Generar Reportes</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="index.php?action=admin" class="dropdown-toggle" data-toggle="dropdown">Movimiento Bienes <b class="caret"></b></a>
+              <ul class="dropdown-menu multi-level">
+                <li><a href="">Consultar</a></li>
+                <li><a href="">Registrar</a></li>
+                <li><a href="">Reportes</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="index.php?action=admin" class="dropdown-toggle" data-toggle="dropdown">Administrador <b class="caret"></b></a>
+              <ul class="dropdown-menu multi-level">
+                <li><a href="">Usuarios</a></li>
+                <li><a href="">Roles</a></li>
+                <li><a href="">Asignacion Roles</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="index.php?action=admin" class="dropdown-toggle" data-toggle="dropdown">Fulanito <b class="caret"></b></a>
+              <ul class="dropdown-menu multi-level">
+                <li><a href="index.php?action=salir">Cerrar Sesión</a></li>
+                <li><a href="">Cambiar Contraseña</a></li>
+              </ul>
+          </li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
