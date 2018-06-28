@@ -7,7 +7,13 @@ class Paginas{
         $enlaces == "usuarios" ||
         $enlaces == "editar"   ||
         $enlaces == "salir"    ||
-        $enlaces == "usuarios/create") {
+        $enlaces == "usuarios/create" ||
+        $enlaces == "bienes/incorporacion" ||
+        $enlaces == "bienes/asignacion" ||
+        $enlaces == "reportes/consulta_cedula" ||
+        $enlaces == "reportes/consulta_num_bien" ||
+        $enlaces == "reportes/consulta_tipo_bien" ||
+        $enlaces == "reportes/consulta_inventario") {
       //Llamamos a los modulos correspondientes a la ruta GET
       $module = "../app/views/modules/".$enlaces.".php";
     }elseif ($enlaces == "index") {

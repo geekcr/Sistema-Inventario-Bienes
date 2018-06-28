@@ -4,9 +4,9 @@ class ConexionModel{
   public function conexion(){
 
     $host     = "localhost";
-    $database = "inventario_bienes";
+    $database = "Inventariobienes";
     $user     = "postgres";
-    $password = "postgres";
+    $password = "conapdis";
 
     $dbconn = pg_connect("host=$host dbname=$database user=$user password=$password") or die("No se ha podido conectar: ".pg_last_error());
 
